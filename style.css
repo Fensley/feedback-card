@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto Mono", monospace;
+  font-size: 13.6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(
+    to top right,
+    #ffffff 0%,
+    #ffffff 50%,
+    rgb(64, 93, 221) 50%,
+    rgb(64, 93, 221) 100%
+  );
+}
+.container {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  width: 390px;
+  height: 450px;
+  background-color: rgb(235, 233, 233);
+}
+.firstinput {
+  height: 150px;
+  width: 100%;
+  border: none;
+}
+.firstinput:focus::placeholder {
+  z-index: -2;
+}
+.firstinput::placeholder {
+  display: flex;
+  position: relative;
+  left: 15px;
+  bottom: 50px;
+  font-size: 1rem;
+}
+.firstinput:focus {
+  outline: none;
+}
+.last-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  color: white;
+  background-color: rgb(64, 93, 221);
+  width: 100%;
+  padding: 1rem;
+}
+h1 {
+  margin-bottom: 10px;
+  color: rgb(64, 93, 221);
+}
+.number1 {
+  padding: 20px;
+  margin: 10px;
+}
+.number2 {
+  padding: 30px;
+}
+input[type="text"] {
+  font-size: 15px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+button:hover {
+  opacity: 0.9;
+}
+.checkbox > input {
+  cursor: pointer;
+  border-radius: 50%;
+}
+@media (max-width: 500px) {
+  body {
+    background: #ffffff;
+    font-size: 10px;
+  }
+  .firstinput::placeholder {
+    font-size: 9px;
+  }
+}
